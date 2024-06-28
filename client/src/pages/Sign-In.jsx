@@ -54,7 +54,9 @@ export default function SignIn() {
         <input type='email' placeholder='email' className='border p-3 rounded-lg' id='email' onChange={handleChange}></input>
         <input type='password' placeholder='password' className='border p-3 rounded-lg' id='password' onChange={handleChange}></input>
         <button disabled = {loading} className='bg-slate-800 text-white p-3 rounded-lg my-2 hover:opacity-95 disabled:opacity-80'>{loading ? 'Loading...' : 'SIGN IN'}</button>
+
         <OAth/>
+        
       </form>
       <div className='flex gap-2 mt-6'>
         <p>Don't have an account ?</p>
